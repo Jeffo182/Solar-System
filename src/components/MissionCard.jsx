@@ -7,8 +7,9 @@ class MissionCard extends React.Component {
       arrayMissions: { name, year, country, destination },
     } = this.props;
     return (
-      <div data-testid="mission-card">
+      <div className="card-mission" data-testid="mission-card">
         <h3>{ name }</h3>
+        <div className="white-line" />
         <p>{ year }</p>
         <p>{ country }</p>
         <p>{ destination }</p>
