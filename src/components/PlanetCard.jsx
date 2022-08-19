@@ -4,11 +4,10 @@ import PropTypes from 'prop-types';
 class PlanetCard extends React.Component {
   render() {
     const { planetName, planetImage } = this.props;
-    const altPlaneta = `Planeta ${planetName}`;
     return (
       <li>
         <div data-testid="planet-card">
-          <img src={ planetImage } alt={ altPlaneta } />
+          <img src={ planetImage } alt={ `Planeta ${planetName}` } />
           <p>{planetName}</p>
         </div>
       </li>
