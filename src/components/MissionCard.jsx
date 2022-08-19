@@ -9,11 +9,9 @@ class MissionCard extends React.Component {
     return (
       <div data-testid="mission-card">
         <h3>{ name }</h3>
-        <ul>
-          <li>{ year }</li>
-          <li>{ country }</li>
-          <li>{ destination }</li>
-        </ul>
+        <p>{ year }</p>
+        <p>{ country }</p>
+        <p>{ destination }</p>
       </div>
     );
   }
